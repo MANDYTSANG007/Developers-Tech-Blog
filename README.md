@@ -18,6 +18,7 @@
 * [Bcrypt](https://www.npmjs.com/package/bcrypt)
 * [Express-session](https://www.npmjs.com/package/express-session)
 * [Connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+* [Heroku](https://www.heroku.com)
 
 
 ## Deployed Link
