@@ -17,7 +17,8 @@ Comment.init(
            type: DataTypes.STRING,
            allowNull: false,
         },
-         user_id: {
+        //This column will store a reference of the id of the user that owns this comment
+         user_id: {         
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
