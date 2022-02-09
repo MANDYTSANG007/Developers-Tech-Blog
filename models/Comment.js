@@ -8,21 +8,29 @@ class Comment extends Model {}
 Comment.init(
     {
         id: {
-           type: DataTypes.INTEGER,
-           allowNull: false,
-           primaryKey: true,
-           autoIncrement: true,
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
         },
         comment_text: {
-           type: DataTypes.STRING,
-           allowNull: false,
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         //This column will store a reference of the id of the user that owns this comment
-         user_id: {         
+        user_id: {         
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
                 model: "user",
+                key: "id",
+            },
+        },
+        post_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: "post",
                 key: "id",
             },
         },
