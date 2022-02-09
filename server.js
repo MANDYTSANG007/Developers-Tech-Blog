@@ -4,6 +4,7 @@ const sequelize = require("./config/connection");
 const path = require("path");
 
 // Import handlebars
+// Set up handlebars engine with custom helpers
 const exphbs = require("express-handlebars");
 const hbs = exphbs.create({helpers});
 
