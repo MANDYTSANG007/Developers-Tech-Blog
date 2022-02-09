@@ -1,4 +1,4 @@
-const { Model, DataType } = require("sequelize");
+const { Model, DataType, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
 class Post extends Model {}
@@ -11,6 +11,10 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         content: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -21,22 +25,16 @@ Post.init(
                 model: "user",
                 key: "id",
             },
-        },//Research: Should I include date created here?
+        },
     },
     {
-        sequelize,
-        timestamps: false,
-        freezeTableName: true,
-        underscored: true,
-        modelName: "post",
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: "post",
     }
 );
 
 module.exports = Post;
 
-
-//post title
-//contents
-//username
-// date created
-//
