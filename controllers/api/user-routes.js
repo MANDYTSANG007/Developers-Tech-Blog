@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { route } = require(".");
-const { User, Post } = require("../../models");
+const { User, Post, Comment } = require("../../models");
+const withAuth = require("../../utils/auth");
 
 // GET users (find all users)
 router.get("/", async (req, res) => {
@@ -11,6 +12,7 @@ router.get("/", async (req, res) => {
         res.status(500).json(err);
     }
 });
+
 // GET one user by his/her id
 router.get("/:id", async(req, res) => {
     User.findOne({
@@ -91,7 +93,7 @@ router.delete("/:id", async(req, res) => {
 });
 
 // Log in for users
-router.post("/login", async (req.res) => {
+router.post("/login", async (req, res) => {
     try {
         // Verify user
         const userData = await User.findOne({ where: {email: req.body.email }});
@@ -116,7 +118,7 @@ router.post("/login", async (req.res) => {
 });
 
 // Log out for user
-router.post("/logout", async(req.res) => {
+router.post("/logout", async(req, res) => {
     if (req.session.logged_in) {
         req.session.destroy(() => {
             res.status(204).end();
