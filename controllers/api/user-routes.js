@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { route } = require(".");
+
 const { User, Post, Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
@@ -62,6 +62,7 @@ router.put("/:d", async(req, res) => {
 //CREATE a new user
 router.post("/", async (req, res) => {
     try {
+        console.log(`req.body.name = ${JSON.stringify(req.body.name)}`);
         const userData = await User.create(req.body);
         // Store user data during session
         req.session.save(() => {

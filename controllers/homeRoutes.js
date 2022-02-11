@@ -15,11 +15,15 @@ router.get("/", async (req, res) => {
                 {
                     model: Comment,
                     attributes: ["id", "comment_text", "user_id", "post_id"],
+                    include: {
+                        model: User,
+                        attributes: ["name"]
+                    }
                 }
             ],
         });
         // Serialize data for template
-        const posts = postData.map((post) => post.get({ plain: true }));
+        const posts = postData.map(post => post.get({ plain: true }));
         // Pass serialized data and session flag into template
         res.render("homepage", {
             posts,
@@ -33,7 +37,7 @@ router.get("/", async (req, res) => {
 // Render one post 
 router.get("/post/:id", async (req, res) =>{
     try {
-        const postData = await this.post.findOne(req.params.id, {
+        const postData = await Post.findByPk(req.params.id, { //const postData = await this.post.findOne(req.params.id,{
             include: [
                 {
                     model: User,
@@ -78,10 +82,15 @@ router.get("/profile", withAuth, async (req, res) => {
 // If the user is already logged in, redirect the request to another route
 router.get("/login", (req, res) => {
     if (req.session.logged_in) {
-        res.redirect("/post");
+        res.redirect("/"); //res.redirect("/post");
         return;
     }
     res.render("login");
+});
+
+// Render sign up 
+router.get("/signup", (req, res) => {
+    res.render("signup");
 });
 
 module.exports = router;
