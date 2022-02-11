@@ -1,9 +1,9 @@
 # Developers-Tech-Blog
-
+Developers Tech Blog where developers can publish their blog posts. This application follows the MVC paradigm and uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. 
 
 
 ## Getting Started
-
+Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Sequelize, MySQL2, Connection-session-sequelize, and Express-session. To connect to the database, run mysql -u root -p in terminal and enter password from .env file. Then source schema.sql in MySQL session. To connect to the server, run npm start. 
 
 
 ## Built With

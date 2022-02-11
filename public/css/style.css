@@ -34,7 +34,7 @@
   }
   
   main {
-    display: flex;
+    /* display: flex;*/
     flex-wrap: wrap;
     flex-grow: 1;
   }

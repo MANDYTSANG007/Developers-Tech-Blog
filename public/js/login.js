@@ -33,7 +33,7 @@ const signupFormHandler = async (event) => {
         const response = await fetch("/api/users", {
             method: "POST",
             body: JSON.stringify({name, email, password}),
-            header: { "Content-Type": "application/json"},
+            headers: { "Content-Type": "application/json"},
         });
         if(response.ok) {
             document.location.replace("/profile");

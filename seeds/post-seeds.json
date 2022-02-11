@@ -1,18 +1,18 @@
 [
     {
-    "title": 1,
+    "title": "Mobile App",
       "user_id": 1,
       "content": "A mobile app that will send you notifications whenever a concert is playing in your area."
      
     },
     {
-        "title": 2,
+        "title": "Web App",
       "user_id":2,
       "content": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
       
     },
     {
-        "title": 3,
+        "title": "Game",
      "user_id": 3,
       "content": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
      

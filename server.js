@@ -23,7 +23,6 @@ const sess = {
     })
 };
 
-app.use(express.bodyParser());
 app.use(express.json());
 app.use(session(sess));
 
