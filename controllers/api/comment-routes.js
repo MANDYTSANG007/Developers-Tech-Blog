@@ -4,7 +4,7 @@ const { User, Post, Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // GET all comments
-router.comment("/", withAuth, async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
     try{
         const commentData = await Comment.findAll({
             include: [
@@ -24,7 +24,7 @@ router.comment("/", withAuth, async (req, res) => {
 });
 
 // CREATE a comment
-route.post("/", async(req, res) => {
+router.post("/", async(req, res) => {
     try{
         const commentData = await Comment.create({
             comment_text: req.body.comment_text,
@@ -37,7 +37,7 @@ route.post("/", async(req, res) => {
     }
 });
 // UPDATE a comment
-route.put("/:id", async(req, res) => {
+router.put("/:id", async(req, res) => {
     Comment.update(req.body, {
         where: {
             id: req.params.id

@@ -42,7 +42,7 @@ router.get("/:id", async(req, res) => {
 });
 
 // UPDATE a user
-router.put()("/:d", async(req, res) => {
+router.put("/:d", async(req, res) => {
     User.update(req.body, {
         where: {
             id: req.params.id
