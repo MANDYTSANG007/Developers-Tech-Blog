@@ -28,7 +28,7 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 
 ## Design Layout
 
-![alt text](./images/Testing-POST-PUT-DELETE-Routes.gif)
+![alt text](./images/Developers-Tech-Blog.gif.gif)
 
 
 ## Authors
