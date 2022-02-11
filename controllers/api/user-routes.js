@@ -47,9 +47,9 @@ router.put("/:d", async(req, res) => {
         where: {
             id: req.params.id
         },
-    }).then(categoryData => {
+    }).then(userData => {
         if(!userData) {
-            res.status(404).json({message: "No category found with this id!"});
+            res.status(404).json({message: "No user found with this id!"});
             return;
         }
         res.status(200).json(userData);
