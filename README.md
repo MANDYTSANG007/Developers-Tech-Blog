@@ -23,7 +23,7 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 
 ## Deployed Link
 
-* [Link to Video ](#)
+* [Link to Heroku ](https://mandyblogapp.herokuapp.com/)
 * [Link to Github](https://github.com/MANDYTSANG007/Developers-Tech-Blog)
 
 ## Design Layout
