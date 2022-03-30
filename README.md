@@ -35,7 +35,7 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 
 * **Mandy Tsang** 
 
-- [Portfolio](https://mandytsang007.github.io/Mandy-Portfolio/)
+- [Portfolio](https://mandytsang007.github.io/new-portfolio/)
 - [Github](https://github.com/MANDYTSANG007)
 - [LinkedIn](https://www.linkedin.com/in/man-tsang-64308b22a/)
 
