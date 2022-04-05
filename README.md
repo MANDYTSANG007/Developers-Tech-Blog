@@ -28,7 +28,7 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 
 ## Design Layout
 
-![alt text](./images/Developers-Tech-Blog.gif)
+Coming soon!
 
 
 ## Authors
