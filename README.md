@@ -8,7 +8,7 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 
 ## Built With
 
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://expressjs.com)
 * [MySQL](https://www.mysql.com)
