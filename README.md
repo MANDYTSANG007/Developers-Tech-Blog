@@ -3,7 +3,7 @@ Developers Tech Blog where developers can publish their blog posts. This applica
 
 
 ## Getting Started
-Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Sequelize, MySQL2, Connection-session-sequelize, and Express-session. To connect to the database, run mysql -u root -p in terminal and enter password from .env file. Then source schema.sql in MySQL session. To connect to the server, run npm start. 
+Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Sequelize, MySQL2, Connection-session-sequelize, and Express-session. Connect to the database by running mysql -u root -p in terminal and enter password from .env file. Then source schema.sql in MySQL session and run npm start to connect to the server. 
 
 
 ## Built With
