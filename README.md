@@ -1,6 +1,10 @@
 # Developers-Tech-Blog
 Developers Tech Blog where developers can publish their blog posts. This application follows the MVC paradigm and uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. 
 
+## Deployed Link
+
+* [Link to Heroku ](https://mandyblogapp.herokuapp.com/)
+* [Link to Github](https://github.com/MANDYTSANG007/Developers-Tech-Blog)
 
 ## Getting Started
 Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Sequelize, MySQL2, Connection-session-sequelize, and Express-session. Connect to the database by running mysql -u root -p in terminal and enter password from .env file. Then source schema.sql in MySQL session and run npm start to connect to the server. 
@@ -20,11 +24,6 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 * [Connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 * [Heroku](https://www.heroku.com)
 
-
-## Deployed Link
-
-* [Link to Heroku ](https://mandyblogapp.herokuapp.com/)
-* [Link to Github](https://github.com/MANDYTSANG007/Developers-Tech-Blog)
 
 ## Design Layout
 
