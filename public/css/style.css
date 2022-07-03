@@ -19,7 +19,6 @@ body {
   
 a {
   color: var(--quatrinary);
-  text-decoration: none;
 }
   
 a:visited {
@@ -34,27 +33,30 @@ header {
 }
   
 main {
-  /* display: flex;*/
   flex-wrap: wrap;
   flex-grow: 1;
 }
   
 nav {
-  text-align: center;
-  background-color: var(--quatrinary);
+  background-color: var(--tertiary);
 }
-  
-nav a {
-  color: var(--light);
+
+.highlight:hover {
+  color: var(--secondary);
+  background-color: var(--yellow);
+  text-decoration: none;
+}
+
+.highlight {
   padding: 30px 30px;
   text-decoration: none;
   text-align: center;
   font-size: 20px;
-}
-  
-nav a:hover {
-  color: var(--secondary);
-  background-color: var(--yellow);
+  border: none;
+  color: black;
+  height: 3em;
+  /* vertical-align: middle; */
+  /* align-items: center; */
 }
 
 h4 {

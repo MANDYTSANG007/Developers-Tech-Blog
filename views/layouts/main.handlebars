@@ -4,33 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developers Tech Blog</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Developers Tech Blog</title>
 </head>
 
 <body>
   <header>
     <h1>Welcome to the Developers Tech Blog</h1>
   </header>
-  <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-      
-    </footer>
+  <nav class="navbar">
+    <a class="d-lg-flex align-items-center highlight" href="/">TechTalk</a>
+    {{#if logged_in}}
+    <a class="d-lg-flex align-items-center ml-auto highlight" href="/profile">profile</a>
+    <!-- since the navbar is based on flexbox, we use ml-auto to align this to the right-->
+    <button class=" d-lg-flex align-items-center no-button highlight" id="logout">logout</button>
+    {{else}}
+    <a class="d-lg-flex align-items-center highlight" href="/login">login</a>
+    {{/if}}
+  </nav>
+  <main class="container container-fluid mt-5">
+    <!-- Render the sub layout -->
+    {{{ body }}}
+  </main>
+  <footer>
+
+  </footer>
   </div>
 
   <!-- Render script for logged in users only -->
