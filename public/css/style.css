@@ -56,3 +56,12 @@ nav a:hover {
   color: var(--secondary);
   background-color: var(--yellow);
 }
+
+h4 {
+  height: 2em;
+}
+
+h4 span {
+  font-size: 0.5em;
+  padding: 0;
+}
