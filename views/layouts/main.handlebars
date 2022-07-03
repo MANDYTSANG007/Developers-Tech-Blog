@@ -17,19 +17,19 @@
   <nav class="navbar">
     <a class="d-lg-flex align-items-center highlight" href="/">TechTalk</a>
     {{#if logged_in}}
-    <a class="d-lg-flex align-items-center ml-auto highlight" href="/profile">profile</a>
-    <!-- since the navbar is based on flexbox, we use ml-auto to align this to the right-->
-    <button class=" d-lg-flex align-items-center no-button highlight" id="logout">logout</button>
+      <a class="d-lg-flex align-items-center ml-auto highlight" href="/profile">profile</a>
+      <!-- since the navbar is based on flexbox, we use ml-auto to align this to the right-->
+      <button class=" d-lg-flex align-items-center no-button highlight" id="logout">logout</button>
     {{else}}
-    <a class="d-lg-flex align-items-center highlight" href="/login">login</a>
+      <a class="d-lg-flex align-items-center highlight" href="/login">login</a>
     {{/if}}
   </nav>
   <main class="container container-fluid mt-5">
     <!-- Render the sub layout -->
     {{{ body }}}
   </main>
-  <footer>
-
+  <footer class="footer">
+    <p> &copy 2022 Mandy Tsang </p>
   </footer>
   </div>
 
@@ -37,7 +37,6 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  </main>
 </body>
 
 </html>
