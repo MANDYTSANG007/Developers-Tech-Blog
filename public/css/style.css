@@ -1,20 +1,25 @@
 :root {
-    --primary: #28f8ff;
+    --primary: #3455e9;
     --secondary: #c0c5ce;
     --tertiary: #f9f9f9;
     --quatrinary: #838996;
+    --navy: #0b1336;
     --light: #f9f9f9;
     --dark: #000000;
     --yellow: #ffbf00;
     --border-radius: 0.3rem;
 }
-  
+/* .card {
+
+    padding-right: 1px !important;
+ } */
+
 body {
   font-family: Arial;
   font-size: 16px;
   margin: 0;
   min-height: 100%;
-  background-color: var(--secondary);
+  background-image: url("1.jpg");
 }
   
 a {
@@ -25,20 +30,14 @@ a:visited {
   color: inherit;
 }
   
-header {
-  padding: 40px;
-  text-align: center;
-  background-color: var(--primary);
-  color: var(--light);
-}
-  
 main {
   flex-wrap: wrap;
   flex-grow: 1;
 }
   
 nav {
-  background-color: var(--tertiary);
+  background-color: var(--navy);
+  color: white;
 }
 
 .highlight:hover {
@@ -72,7 +71,7 @@ h4 span {
   display: block;
   margin: 0px;
   height: 30px;
-  background-color: var(--primary);
+  background-color: var(--navy);
 }
 
 .container {
@@ -82,4 +81,8 @@ h4 span {
 
 .labels {
   white-space: nowrap;
+}
+
+.postContent {
+  height: 50vh;
 }

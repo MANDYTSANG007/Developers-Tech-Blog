@@ -1,42 +1,55 @@
 <div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
-
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
-
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
+  <div class="col-md-12">
+    <h2 class="text-light">Welcome to TechTalk, please signup or login.</h2>
   </div>
 </div>
 
+  <div class="row mt-4">
+    <div class="card mx-auto" style="width: 30em; margin-bottom: 20px">
+      <div class="card-header">
+        <h2>Login</h2>
+      </div>
+      <div class="card-body">
+        <form class="form login-form">
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label labels" for="email-login">email:</label>
+            <input class="col-sm-8 form-input" type="text" id="email-login" />
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label labels" for="password-login">password:</label>
+            <input class="col-sm-8 form-input" type="password" id="password-login" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card mx-auto" style="width: 30em; margin-bottom: 20px">
+      <div class="card-header">
+        <h2>Signup</h2>
+      </div>
+      <div class="card-body">
+        <form class="form signup-form">
+          <div class="form-group">
+            <label class="col-sm-3 col-form-label labels" for="name-signup">name:</label>
+            <input class="col-sm-8 form-input" type="text" id="name-signup" />
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 col-form-label labels" for="email-signup">email:</label>
+            <input class="col-sm-8 form-input" type="text" id="email-signup" />
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 col-form-label labels" for="password-signup">password:</label>
+            <input class="col-sm-8 form-input" type="password" id="password-signup" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">signup</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <script src="./js/login.js"></script>
