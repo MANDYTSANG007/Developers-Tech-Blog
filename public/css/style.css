@@ -9,10 +9,6 @@
     --yellow: #ffbf00;
     --border-radius: 0.3rem;
 }
-/* .card {
-
-    padding-right: 1px !important;
- } */
 
 body {
   font-family: Arial;
@@ -54,6 +50,11 @@ nav {
   border: none;
   color: black;
   height: 3em;
+}
+
+.loginTitle {
+  background-color: var(--navy);
+  opacity: 0.8;  
 }
 
 h4 {
