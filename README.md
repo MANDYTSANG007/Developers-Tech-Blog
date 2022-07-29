@@ -25,19 +25,12 @@ Clone this repository from GitHub. Install dependencies: Node.js, Express.js, Se
 * [Heroku](https://www.heroku.com)
 
 
-## Design Layout
-
-Coming soon!
-
-
 ## Authors
 
 **Mandy Tsang** 
 
-- [Portfolio](https://mandytsang007.github.io/new-portfolio/)
+- [Portfolio](https://mandytsang007.github.io/mt-portfolio/)
 - [Github](https://github.com/MANDYTSANG007)
-- [LinkedIn](https://www.linkedin.com/in/man-tsang-64308b22a/)
-
 
 ## License
 
